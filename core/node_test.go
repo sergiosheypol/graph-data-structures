@@ -1,4 +1,4 @@
-package structures
+package core
 
 import (
 	"testing"
@@ -13,26 +13,26 @@ func TestNode_Equals_Int(t *testing.T) {
 	}{
 		{
 			name: "True Happy Path",
-			n:    NewNode("n1", 2),
-			n2:   NewNode("n1", 2),
+			n:    NewNode(1, 2),
+			n2:   NewNode(1, 2),
 			want: true,
 		},
 		{
 			name: "False Wrong Value",
-			n:    NewNode("n1", 2),
-			n2:   NewNode("n1", 3),
+			n:    NewNode(1, 2),
+			n2:   NewNode(1, 3),
 			want: false,
 		},
 		{
 			name: "False Wrong Id",
-			n:    NewNode("n1", 2),
-			n2:   NewNode("n2", 2),
+			n:    NewNode(1, 2),
+			n2:   NewNode(2, 2),
 			want: false,
 		},
 		{
 			name: "False All Wrong",
-			n:    NewNode("n1", 2),
-			n2:   NewNode("n2", 15),
+			n:    NewNode(1, 2),
+			n2:   NewNode(2, 15),
 			want: false,
 		},
 	}
@@ -54,26 +54,26 @@ func TestNode_Equals_String(t *testing.T) {
 	}{
 		{
 			name: "True Happy Path",
-			n:    NewNode("n1", "blue"),
-			n2:   NewNode("n1", "blue"),
+			n:    NewNode(1, "blue"),
+			n2:   NewNode(1, "blue"),
 			want: true,
 		},
 		{
 			name: "False Wrong Value",
-			n:    NewNode("n1", "blue"),
-			n2:   NewNode("n1", "red"),
+			n:    NewNode(1, "blue"),
+			n2:   NewNode(1, "red"),
 			want: false,
 		},
 		{
 			name: "False Wrong Id",
-			n:    NewNode("n1", "blue"),
-			n2:   NewNode("n2", "blue"),
+			n:    NewNode(1, "blue"),
+			n2:   NewNode(2, "blue"),
 			want: false,
 		},
 		{
 			name: "False All Wrong",
-			n:    NewNode("n1", "blue"),
-			n2:   NewNode("n2", "red"),
+			n:    NewNode(1, "blue"),
+			n2:   NewNode(2, "red"),
 			want: false,
 		},
 	}
