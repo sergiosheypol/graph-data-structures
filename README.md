@@ -24,7 +24,7 @@ then follow a TDD approach.
 # Support
 
 💪 follow me on [Github](https://github.com/sergiosheypol), [Tiktok](https://www.tiktok.com/@sergiosheypol)
-or [Instagram](https://www.instagram.com/sergiosheypol/)
+or [Youtube](https://youtube.com/@sergiosheypol)
 
 # Contributions
 
